@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulaire ergonomique d'inscription en ligne à l'ESGAE.">
+  <title>Inscription en ligne | ESGAE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="form-card" aria-labelledby="form-title">
+      <div class="card-top">
+        <span>ESGAE</span>
+        <span class="top-caption">FORMULAIRE D'INSCRIPTION</span>
+      </div>
+
+      <header class="form-header">
+        <div class="school-mark" aria-hidden="true">E</div>
+        <div>
+          <p class="eyebrow">École Supérieure de Gestion et d'Administration des Entreprises</p>
+          <h1 id="form-title">Inscription en ligne</h1>
+          <p class="intro">Veuillez renseigner les informations ci-dessous pour compléter votre préinscription.</p>
+        </div>
+      </header>
+
+      <form action="#" method="post">
+        <p class="required-note"><span aria-hidden="true">*</span> Champs obligatoires</p>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nom">Nom <span aria-hidden="true">*</span></label>
+            <input id="nom" name="nom" type="text" placeholder="Ex. : MOUKOU" autocomplete="family-name" required>
+            <small>Saisissez votre nom de famille.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="prenom">Prénom(s) <span aria-hidden="true">*</span></label>
+            <input id="prenom" name="prenom" type="text" placeholder="Ex. : Jean-Pierre" autocomplete="given-name" required>
+            <small>Indiquez vos prénoms comme sur votre pièce d'identité.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="naissance">Date de naissance <span aria-hidden="true">*</span></label>
+            <input id="naissance" name="date_naissance" type="date" autocomplete="bday" required>
+            <small>Choisissez votre date de naissance.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Numéro de téléphone <span aria-hidden="true">*</span></label>
+            <input id="telephone" name="telephone" type="tel" placeholder="Ex. : +242 06 000 00 00" autocomplete="tel" required>
+            <small>Utilisez un numéro auquel vous êtes joignable.</small>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="filiere">Filière <span aria-hidden="true">*</span></label>
+            <select id="filiere" name="filiere" required>
+              <option value="" selected disabled>Choisissez votre filière</option>
+              <option value="Informatique de gestion">Informatique de gestion</option>
+              <option value="Comptabilité et finance">Comptabilité et finance</option>
+              <option value="Communication et marketing">Communication et marketing</option>
+            </select>
+            <small>Sélectionnez la filière souhaitée.</small>
+          </div>
+        </div>
+
+        <div class="form-help" role="note">
+          <span class="help-icon" aria-hidden="true">i</span>
+          <p>Vérifiez vos informations avant de valider. Les champs obligatoires doivent être remplis. En cas d'oubli ou de format incorrect, votre navigateur vous indiquera le champ à corriger.</p>
+        </div>
+
+        <button type="submit">S'inscrire <span aria-hidden="true">→</span></button>
+        <p class="privacy">Vos informations sont destinées au traitement de votre demande d'inscription.</p>
+      </form>
+    </section>
+    <footer>© ESGAE — Formulaire de préinscription</footer>
+  </main>
+</body>
+</html>
